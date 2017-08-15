@@ -1,4 +1,6 @@
 <?php
+  include("../functions/json_xencode.php");
+
   function get_data_from_post($value) {
     $data = array();
     foreach (explode("&", $value) as $v) {

@@ -2,7 +2,6 @@
   // インクルード
   include("../functions/enquetes.php");
   include("../functions/utilities.php");
-  include("../functions/json_xencode.php");
 
   // POST データを取得
   $post = get_data_from_post(file_get_contents("php://input"));
