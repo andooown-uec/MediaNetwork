@@ -1,3 +1,7 @@
+<?php
+  $is_login = isset($_COOKIE['user_name']);   // ログインの有無
+?>
+
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +13,13 @@
   </head>
   <body>
     <div class="container">
-      <a class="floatingButton listPageButton" href="list.html">ログイン</a>
+      <div class="menuContainer">
+<?php if ($is_login): ?>
+        <a class="floatingButton listPageButton" href="list.php">アンケートを作成</a>
+<?php else: ?>
+        <a class="floatingButton listPageButton" href="list.php">ログイン</a>
+<?php endif; ?>
+      </div>
       <div id="listBox" class="box">
         <div id="list"><div class="loading"><i class="fa fa-spinner fa-spin"></i></div></div>
       </div>

@@ -61,6 +61,13 @@ body {
   animation: animation 1000ms linear infinite both;
 }
 
+.menuContainer {
+  display: flex;
+  width: 90vw;
+  justify-content: flex-end;
+  margin-bottom: 1vh;
+}
+
 .listPageButton {
   color: #000;
   background-color: rgba(255, 255, 255, 0.2);
