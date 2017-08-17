@@ -13,7 +13,7 @@
       $enquetes = get_enquetes();
       // 投票先のアンケートのインデックスを取得
       $key = array_search(intval($post["id"]), array_column($enquetes, 'id'));
-      if ($key == FALSE) {
+      if ($key === FALSE) {
         // エラー出力
         output_result("error", "指定されたIDを持つアンケートはありません");
         return;
