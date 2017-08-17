@@ -70,11 +70,8 @@ function updateList() {
       $('.listItem').on('click', function () {
         // 対象のアンケートを取得する
         var id = parseInt($(this).children("#itemId").html());
-        console.log(Enumerable.From(data).Where('$.id == ' + id).First());
-
-        console.log("Clicked!(id: " + $(this).children("#itemId").html() + ")");
-        // フェードイン
-        $('#modalOverlay').fadeIn('slow');
+        // 遷移
+        window.location.href = './vote.php?id=' + id;
       });
     }
   }
