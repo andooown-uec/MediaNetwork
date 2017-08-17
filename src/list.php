@@ -1,5 +1,5 @@
 <?php
-  $is_login = isset($_COOKIE['user_name']);   // ログインの有無
+  $is_login = isset($_COOKIE['user_id']);   // ログインの有無
 ?>
 
 <html>
@@ -18,7 +18,7 @@
 <?php if ($is_login): ?>
         <a class="floatingButton listPageButton" href="list.php">アンケートを作成</a>
 <?php else: ?>
-        <a class="floatingButton listPageButton" href="list.php">ログイン</a>
+        <a class="floatingButton listPageButton" href="login.html">ログイン</a>
 <?php endif; ?>
       </div>
       <div id="listBox" class="box">

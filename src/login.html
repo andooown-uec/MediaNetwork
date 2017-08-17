@@ -12,19 +12,25 @@
     <div class="container">
       <div id="loginBox" class="box">
         <h1>ログイン</h1>
-        <form action="login.php" method="POST">
+        <form id="loginForm" action="#" method="POST">
           <table border="0">
             <tr>
               <td>ID</td>
-              <td><input type="text" name="user_id" /></td>
+              <td><input id='id' type="text" name="user_id" /></td>
             </tr>
             <tr>
               <td>パスワード</td>
-              <td><input type="password" name="user_pw" /></td>
+              <td><input id='password' type="password" name="user_pw" /></td>
             </tr>
           </table>
+          <span id="message"></span><br />
+          <input type="submit" value="送信">
         </form>
+        <a href='regist.html' target="_self">登録ページへ</a>
       </div>
     </div>
+
+    <script type="text/javascript" src="js/jquery.min.1.9.1.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
   </body>
 </html>
