@@ -16,7 +16,7 @@
     <div class="container">
       <div class="menuContainer">
 <?php if ($is_login): ?>
-        <a class="floatingButton listPageButton" href="list.php">アンケートを作成</a>
+        <a class="floatingButton listPageButton" href="create.php">アンケートを作成</a>
 <?php else: ?>
         <a class="floatingButton listPageButton" href="login.html">ログイン</a>
 <?php endif; ?>

@@ -1,4 +1,4 @@
-$('#loginForm').on('submit', function(event) {console.log('Clicked');
+$('#createForm').on('submit', function(event) {console.log('Clicked');
   // 本来のポストを打ち消す
   event.preventDefault();
   // 作成
