@@ -1,11 +1,11 @@
-.listPageButton {
+.bbsPageButton {
   color: #000;
   background-color: rgba(255, 255, 255, 0.2);
   font-size: calc(115% + 1vw);
   margin-left: 2vw;
 }
 
-#listBox {
+#bbsBox {
   width: 90vw;
   height: 90vh;
   display: flex;
@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 
-#list {
+#bbs {
   width: 95%;
   height: 95%;
   margin: 2vh 2vw;
@@ -25,17 +25,17 @@
   overflow-y: scroll;
 }
 
-#list::-webkit-scrollbar {
+#bbs::-webkit-scrollbar {
   width: 2vw;   /* バーの太さ */
 }
-#list::-webkit-scrollbar-track {
+#bbs::-webkit-scrollbar-track {
   background: #DDDDDD;  /* バーの背景色 */
 }
-#list::-webkit-scrollbar-thumb {
+#bbsPageButton::-webkit-scrollbar-thumb {
   background: #EEEEEE;  /* バーの色 */
 }
 
-.listItem {
+.bbsItem {
   width: 95%;
   height: auto;
   margin: 5px 0;
@@ -43,43 +43,4 @@
   background-color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-}
-
-.itemTitle {
-  font-size: calc(120% + 1vw);
-}
-
-.tableOption {
-  width: 100%;
-  text-align: left;
-}
-
-.textOption {
-  white-space: nowrap;
-}
-
-.tdChart {
-  width: 90%;
-}
-
-.charts {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.itemDate {
-  float: right;
-  font-size: calc(50% + 0.5vw);
-  color: #888888;
-}
-
-#modalOverlay {
-	z-index: 1;
-	display: none;
-	position: fixed;
-	top: 100vh;
-	left: 0;
-	width: 100vw;
-	height: 120vh;
-	background-color: rgba(255, 255, 255, 0.8);
 }

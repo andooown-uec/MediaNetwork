@@ -15,6 +15,7 @@
   <body>
     <div class="container">
       <div class="menuContainer">
+        <a class="floatingButton listPageButton" href="bbs.php">掲示板</a>
 <?php if ($is_login): ?>
         <a class="floatingButton listPageButton" href="create.php">アンケートを作成</a>
 <?php else: ?>

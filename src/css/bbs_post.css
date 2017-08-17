@@ -1,0 +1,7 @@
+#postBox {
+  padding: 20px;
+  display: flex;
+  justify-content: center;;  /* 縦方向上揃え */
+  align-items: center;          /* 横方向中央揃え */
+  flex-direction: column;
+}
